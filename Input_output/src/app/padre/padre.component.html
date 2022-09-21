@@ -1,0 +1,6 @@
+<h1>Información de la persona</h1>
+<hr>
+<div>
+    <span>Edad: {{ (persona? persona.edad : '') }}</span>
+</div>
+<app-hijo [InfoPersona]="infoPadre" (Edad)="ObtenerEdad($event)"></app-hijo>
